@@ -16,7 +16,7 @@ set -euo pipefail
 ### merge previous task outputs into a single .txt
 cat fastq_results/read_*.txt | sort -V > fastq_results/results.txt
 
-### remove individual per-task files
-rm fastq_results/read_*.txt
+###optional:  remove individual per-task files
+###rm fastq_results/read_*.txt
 
 echo "Merge complete: fastq_results/results.txt"
