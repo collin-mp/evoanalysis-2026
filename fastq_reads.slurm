@@ -29,4 +29,4 @@ FASTQ=/project/evoanalysis/d3challenge_fq/$(sed -n "${SLURM_ARRAY_TASK_ID}p" "$F
 READS=$(( $(wc -l < "$FASTQ") / 4 ))
 
 ### print counts to file
-printf "%s\t%s\n" "$(basename "$FASTQ")" "$READS" > fastq_results/read_${SLURM_ARRAY_TASK_ID}.txt
+printf "%s\t%s\n" "$(basename "$FASTQ")" "$READS" > "fastq_results/read_$(basename "$FASTQ" .fastq).txt"
