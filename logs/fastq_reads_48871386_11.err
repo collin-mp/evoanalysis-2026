@@ -1,3 +1,0 @@
-/var/spool/slurmd/job48871397/slurm_script: line 29: PBM12_044.combined_final.fastq: No such file or directory
-/var/spool/slurmd/job48871397/slurm_script: line 29: / 4 : syntax error: operand expected (error token is "/ 4 ")
-/var/spool/slurmd/job48871397/slurm_script: line 32: READS: unbound variable
